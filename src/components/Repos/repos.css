@@ -1,0 +1,81 @@
+
+#repos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 150px;
+    background-color: rgb(17, 17, 17);
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/304/870/385/technology-git-github-hd-wallpaper-preview.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.repo{
+    background: rgba(46, 46, 46,0.85);
+    color: white;
+    min-width: 150px;
+    min-height: 130px;
+    margin: 25px;
+    padding: 5px;
+    flex: 1 0 21%;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.repo:hover{
+    background: rgba(92, 92, 92, 0.95);
+}
+
+.repo a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.repo-name{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    overflow: scroll;
+    font-weight: bold;
+}
+
+.repo-desc{
+    padding-top: 20px;
+}
+
+.repo-language{
+    position: relative;
+    text-align: right;
+    color: aqua;
+    padding-top: 10px;
+    padding-right: 5px;
+}

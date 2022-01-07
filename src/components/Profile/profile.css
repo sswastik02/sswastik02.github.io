@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: darkblue;
+    background-image: url('https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    padding: 30px;
+}
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+
+.avatar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followers, .following{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.followers-number, .following-number{
+    font-size: 2rem;
+    color: rgb(250, 162, 0);
+    text-align: center;
+    font-weight: bold;
+}
+
+.avatar img{
+    width: 400px;
+    border-radius: 50%;
+    border: 10px dashed white;
+    padding: 10px;
+    margin: 10px;
+    animation: fadeInDown ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.user-details{
+    padding: 10px 0;
+}
+
+.name{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.username{
+    font-size: 2.5rem;
+    color:rgb(250, 162, 0);
+}
+
+#hidden-username{
+    color: transparent;
+}
+
+.quote{
+    color: wheat;
+    font-size: 2rem;
+    background-color: rgba(10, 10, 10, 0.657);
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:450px){
+    .avatar img{
+        width: 300px;
+    }
+    .name{
+        font-size: 2.5rem;
+    }
+    .username{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width:350px){
+    .avatar img{
+        width: 250px;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .username{
+        font-size: 1.5rem;
+    }
+    .quote{
+        font-size: 1.5rem;
+    }
+}
